@@ -12,7 +12,10 @@ public class DemojenkinApplication {
 	public String getMessage() {
 		return "welcome to jenkins cicd ";
 	}
-
+	@GetMapping("/msg1")
+	public String getMessage1() {
+		return "welcome to 2nd api cicd ";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(DemojenkinApplication.class, args);
 	}
